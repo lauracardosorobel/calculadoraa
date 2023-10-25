@@ -4,11 +4,11 @@ const resp = document.querySelector("pre")
 frm.addEventListener("submit, (e) =>{
     e.preventDefault()
 
-    const Número = Number(frm.inNumero.value)
+    const numero = Number(frm.inNumero.value)
     let resposta = ""
-    for(let 1 = 1; 1 <= 10; 1++){
-        resposta = resposta + Número + " x " + 1 + " = " + (Número * 1) + "\n"
+    for(let i = 1; i <= 10; i++){
+        resposta = resposta + numero + " x " + i + " = " + (numero * i) + "\n"
     }
     resp.innerText = resposta
-    
+
 })
